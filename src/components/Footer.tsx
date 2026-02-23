@@ -9,7 +9,33 @@ export default function Footer() {
             <div className={styles.inner}>
                 <div className={styles.top}>
                     <div className={styles.brand}>
-                        <h3>VEXON</h3>
+                        <h3>
+                            <svg
+                                className={styles.logoIcon}
+                                width="28"
+                                height="32"
+                                viewBox="0 0 32 36"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M16 1L2 7v10c0 9.5 6 17.5 14 19 8-1.5 14-9.5 14-19V7L16 1z"
+                                    fill="#c0c0c0"
+                                    fillOpacity="0.15"
+                                    stroke="#9ca3af"
+                                    strokeWidth="1.5"
+                                />
+                                <path
+                                    d="M9 18l5 5 9-11"
+                                    stroke="#4a6fa5"
+                                    strokeWidth="3"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    fill="none"
+                                />
+                            </svg>
+                            VEXON
+                        </h3>
                         <p>
                             Move Forward With Confidence. Verified car deals through
                             inspections, documentation checks, and transparent processes.
