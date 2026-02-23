@@ -2,10 +2,11 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 
-const navItems = [
+const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/buyers', label: 'For Buyers' },
@@ -15,22 +16,73 @@ const navItems = [
 ];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const toggle = () => setIsOpen(!isOpen);
-  const close = () => setIsOpen(false);
-
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.inner}>
-        <Link href="/" className={styles.logo} onClick={close}>
-          VEXON
+    <header className={styles.header}>
+      <nav className={styles.nav}>
+        <Link href="/" className={styles.logo} aria-label="VEXON Home">
+          {/* Shield + Checkmark Logo */}
+          <svg
+            className={styles.logoIcon}
+            width="32"
+            height="36"
+            viewBox="0 0 32 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {/* Shield */}
+            <path
+              d="M16 1L2 7v10c0 9.5 6 17.5 14 19 8-1.5 14-9.5 14-19V7L16 1z"
+              fill="#c0c0c0"
+              fillOpacity="0.15"
+              stroke="#9ca3af"
+              strokeWidth="1.5"
+            />
+            {/* Checkmark */}
+            <path
+              d="M9 18l5 5 9-11"
+              stroke="#4a6fa5"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+          </svg>
+          <span className={styles.logoText}>VEXON</span>
+        </Link>
+
+        <ul className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={pathname === link.href ? styles.active : ''}
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+          <li className={styles.mobileCta}>
+            <Link
+              href="/buyers"
+              className="btn btn--primary"
+              onClick={() => setMenuOpen(false)}
+            >
+              Get Started
+            </Link>
+          </li>
+        </ul>
+
+        <Link href="/buyers" className={`btn btn--primary ${styles.desktopCta}`}>
+          Get Started
         </Link>
 
         <button
-          className={`${styles.hamburger} ${isOpen ? styles.open : ''}`}
-          onClick={toggle}
+          className={styles.hamburger}
+          onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
           <span />
@@ -38,27 +90,13 @@ export default function Navbar() {
           <span />
         </button>
 
-        <div className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`${styles.navLink} ${pathname === item.href ? styles.active : ''}`}
-              onClick={close}
-            >
-              {item.label}
-            </Link>
-          ))}
-          <Link href="/buyers" className={styles.cta} onClick={close}>
-            Get Started
-          </Link>
-        </div>
-
-        <div
-          className={`${styles.overlay} ${isOpen ? styles.open : ''}`}
-          onClick={close}
-        />
-      </div>
-    </nav>
+        {menuOpen && (
+          <div
+            className={styles.overlay}
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
+      </nav>
+    </header>
   );
 }
