@@ -9,10 +9,6 @@ export const metadata: Metadata = {
   description:
     'VEXON facilitates verified car deals through inspections, documentation checks, and a transparent process. Move forward with confidence.',
   keywords: 'verified cars, car inspection, car deals, car brokerage, transparent deals',
-  icons: {
-    icon: '/images/favicon.png',
-    apple: '/images/favicon.png',
-  },
   openGraph: {
     title: 'VEXON – Verified Cars. Transparent Deals.',
     description:
