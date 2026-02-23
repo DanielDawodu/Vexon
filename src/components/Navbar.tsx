@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 
@@ -20,8 +19,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
+    <header className={styles.navbar}>
+      <nav className={styles.inner}>
         <Link href="/" className={styles.logo} aria-label="VEXON Home">
           {/* Shield + Checkmark Logo */}
           <svg
@@ -32,7 +31,6 @@ export default function Navbar() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            {/* Shield */}
             <path
               d="M16 1L2 7v10c0 9.5 6 17.5 14 19 8-1.5 14-9.5 14-19V7L16 1z"
               fill="#c0c0c0"
@@ -40,7 +38,6 @@ export default function Navbar() {
               stroke="#9ca3af"
               strokeWidth="1.5"
             />
-            {/* Checkmark */}
             <path
               d="M9 18l5 5 9-11"
               stroke="#4a6fa5"
@@ -53,35 +50,32 @@ export default function Navbar() {
           <span className={styles.logoText}>VEXON</span>
         </Link>
 
-        <ul className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
+        <div className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>
           {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={pathname === link.href ? styles.active : ''}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-          <li className={styles.mobileCta}>
             <Link
-              href="/buyers"
-              className="btn btn--primary"
+              key={link.href}
+              href={link.href}
+              className={`${styles.navLink} ${pathname === link.href ? styles.active : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              Get Started
+              {link.label}
             </Link>
-          </li>
-        </ul>
+          ))}
+          <Link
+            href="/buyers"
+            className={styles.cta}
+            onClick={() => setMenuOpen(false)}
+          >
+            Get Started
+          </Link>
+        </div>
 
-        <Link href="/buyers" className={`btn btn--primary ${styles.desktopCta}`}>
+        <Link href="/buyers" className={styles.cta} style={{ display: 'none' }}>
           Get Started
         </Link>
 
         <button
-          className={styles.hamburger}
+          className={`${styles.hamburger} ${menuOpen ? styles.open : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -92,7 +86,7 @@ export default function Navbar() {
 
         {menuOpen && (
           <div
-            className={styles.overlay}
+            className={`${styles.overlay} ${menuOpen ? styles.open : ''}`}
             onClick={() => setMenuOpen(false)}
           />
         )}
