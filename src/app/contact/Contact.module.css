@@ -1,0 +1,138 @@
+.page {
+    padding: 5rem 0;
+}
+
+.inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.header {
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.05rem;
+}
+
+.heroImage {
+    margin-bottom: 2.5rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.heroImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.method {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1.75rem;
+    background-color: var(--off-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--light-grey);
+    transition: box-shadow var(--transition);
+}
+
+.method:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.methodIcon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: var(--radius-sm);
+    color: var(--muted-blue);
+    border: 1px solid var(--light-grey);
+}
+
+.methodContent h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.methodContent p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.methodContent a {
+    color: var(--muted-blue);
+    font-weight: 500;
+}
+
+.methodContent a:hover {
+    text-decoration: underline;
+}
+
+.whatsappCta {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--charcoal);
+    border-radius: var(--radius-lg);
+}
+
+.whatsappCta h2 {
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.whatsappCta p {
+    color: var(--steel-grey-light);
+    font-size: 0.9rem;
+    margin: 0 auto 1.5rem;
+}
+
+.whatsappBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all var(--transition);
+}
+
+.whatsappBtn:hover {
+    background-color: #1da851;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.whatsappBtn svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 3rem 0;
+    }
+}
