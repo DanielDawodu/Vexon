@@ -9,13 +9,13 @@ export default function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroGrid}>
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Trusted Car Brokerage</span>
+            <span className={styles.badge}>Trusted Car Dealers in Nigeria</span>
             <h1 className={styles.heroTitle}>
-              Verified Cars. Transparent Deals.
+              Verified Cars. Transparent Deals in Nigeria.
             </h1>
             <p className={styles.heroSubtext}>
-              Clearline Auto helps car buyers move forward with confidence through verified
-              inspections and clear documentation. No guesswork. No surprises.
+              Clearline Auto connects buyers with the most trusted car dealers in Nigeria. Move forward with confidence through verified
+              inspections and clear documentation. No guesswork. No surprises in Lagos or nationwide.
             </p>
             <div className={styles.heroCtas}>
               <Link href="/buyers" className="btn btn--primary btn--large">
@@ -43,9 +43,9 @@ export default function HomePage() {
       <section className={styles.pillars}>
         <div className={styles.pillarsInner}>
           <div className="section-header">
-            <h2>Why Clearline Auto</h2>
+            <h2>Why Choose Clearline Automotive Concepts</h2>
             <p>
-              Every deal is built on a foundation of verification, clarity, and
+              As one of the most trusted car verification networks in Nigeria, every deal is built on a foundation of verification, clarity, and
               professional handling.
             </p>
           </div>

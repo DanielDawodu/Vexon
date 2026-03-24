@@ -35,17 +35,17 @@ export default function AboutPage() {
                 <div className={styles.content}>
                     <h2>Why Clearline Auto Exists</h2>
                     <p>
-                        The car buying process in many markets is still opaque. Buyers face
-                        uncertainty about vehicle condition, documentation validity, and
-                        pricing fairness. Dealers struggle with time-wasters and
+                        The car buying process in Nigeria is often opaque. Buyers face
+                        uncertainty about vehicle conditions, local documentation validity, and
+                        pricing fairness. Meanwhile, genuine auto dealers struggle with time-wasters and
                         unqualified leads.
                     </p>
                     <p>
-                        Clearline Auto was created to bridge this gap. By introducing a structured
-                        verification process, we ensure that every deal is built on a
+                        Clearline Automotive Concepts was created to bridge this gap in the Nigerian automotive market. By introducing a structured
+                        verification process, we ensure that every deal in Lagos and nationwide is built on a
                         foundation of trust. We do not own inventory and we do not sell cars
                         directly. Instead, we facilitate verified transactions between
-                        screened dealers and qualified buyers.
+                        screened local dealers and qualified buyers looking for trusted vehicles.
                     </p>
 
                     <h2>How We Think About Trust</h2>
