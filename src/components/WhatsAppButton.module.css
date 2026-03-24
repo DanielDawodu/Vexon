@@ -1,0 +1,42 @@
+.whatsappBtn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font-family);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+    transition: all var(--transition);
+    text-decoration: none;
+}
+
+.whatsappBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+    color: #fff;
+}
+
+.whatsappBtn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .whatsappBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 0.7rem 1rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,135 @@
+.page {
+    padding: 5rem 0;
+}
+
+.inner {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.header {
+    margin-bottom: 2.5rem;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Hero image */
+.heroImage {
+    margin-bottom: 3rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.heroImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.content {
+    margin-bottom: 3rem;
+}
+
+.content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.valueCard {
+    padding: 1.75rem;
+    background-color: var(--off-white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--light-grey);
+}
+
+.valueCard h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.valueCard p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Team section */
+.founders {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    background-color: var(--off-white);
+    border-radius: var(--radius-lg);
+}
+
+.foundersGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.foundersImage {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.teamImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.foundersContent h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    color: var(--charcoal);
+}
+
+.foundersContent p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 3rem 0;
+    }
+
+    .values {
+        grid-template-columns: 1fr;
+    }
+
+    .foundersGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .founders {
+        padding: 1.5rem;
+    }
+}

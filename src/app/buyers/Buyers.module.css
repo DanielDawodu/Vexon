@@ -1,0 +1,89 @@
+.page {
+    padding: 5rem 0;
+}
+
+.inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+/* Header with image */
+.headerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.headerContent h1 {
+    margin-bottom: 1rem;
+}
+
+.headerContent p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.headerImage {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.sectionImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Form */
+.formCard {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--light-grey);
+    box-shadow: var(--shadow-sm);
+}
+
+.formCard h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.submitBtn {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* Note */
+.note {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background-color: var(--off-white);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--muted-blue);
+}
+
+.note p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 3rem 0;
+    }
+
+    .headerGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .formCard {
+        padding: 1.5rem;
+    }
+}

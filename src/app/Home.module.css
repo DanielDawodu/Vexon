@@ -1,0 +1,286 @@
+.hero {
+    padding: 5rem 0 4rem;
+    background: linear-gradient(135deg, var(--off-white) 0%, var(--white) 100%);
+}
+
+.heroGrid {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.heroContent {
+    text-align: left;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background-color: rgba(74, 111, 165, 0.08);
+    color: var(--muted-blue);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+    margin-bottom: 1.25rem;
+}
+
+.heroSubtext {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 2rem;
+}
+
+.heroCtas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.heroImage {
+    position: relative;
+}
+
+.heroImg {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+}
+
+/* Trust Pillars */
+.pillars {
+    padding: var(--section-padding);
+}
+
+.pillarsInner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.pillarsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pillarCard {
+    text-align: center;
+    padding: 2.5rem 2rem;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--light-grey);
+    transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.pillarCard:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.pillarIcon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(74, 111, 165, 0.08);
+    border-radius: var(--radius-md);
+    color: var(--muted-blue);
+}
+
+.pillarCard h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+}
+
+.pillarCard p {
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+/* Process */
+.process {
+    padding: var(--section-padding);
+    background-color: var(--off-white);
+}
+
+.processInner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.processGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.processImage {
+    position: relative;
+}
+
+.sectionImg {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    object-fit: cover;
+}
+
+.processContent h2 {
+    margin-bottom: 0.75rem;
+}
+
+.processSubtext {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.processSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.processStep {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--light-grey);
+}
+
+.stepNumber {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: var(--charcoal);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.processStep h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.processStep p {
+    font-size: 0.85rem;
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: var(--section-padding);
+}
+
+.ctaInner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.ctaImageWrap {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.ctaImage {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.ctaOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 46, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.ctaOverlay h2 {
+    color: var(--white);
+    margin-bottom: 0.75rem;
+}
+
+.ctaOverlay p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .heroGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .heroContent {
+        text-align: center;
+    }
+
+    .heroSubtext {
+        font-size: 1rem;
+        margin: 0 auto 2rem;
+    }
+
+    .heroCtas {
+        justify-content: center;
+    }
+
+    .pillarsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .processGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .heroCtas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroCtas a {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .ctaImage {
+        height: 320px;
+    }
+}

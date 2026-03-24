@@ -1,0 +1,133 @@
+.page {
+    padding: 5rem 0;
+}
+
+.inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header p {
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+}
+
+.heroImage {
+    max-width: 720px;
+    margin: 0 auto 3rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.heroImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Steps */
+.timeline {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--light-grey);
+}
+
+.step {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.stepMarker {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--charcoal);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.stepContent {
+    padding-top: 0.5rem;
+}
+
+.stepContent h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+}
+
+.stepContent p {
+    font-size: 0.9rem;
+}
+
+/* Highlighted statement */
+.statement {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    text-align: center;
+    background-color: var(--off-white);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--muted-blue);
+}
+
+.statement h2 {
+    font-size: 1.6rem;
+    color: var(--charcoal);
+}
+
+.statement p {
+    margin: 0.75rem auto 0;
+    font-size: 1rem;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 3rem 0;
+    }
+
+    .step {
+        gap: 1.25rem;
+    }
+
+    .stepMarker {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+}
