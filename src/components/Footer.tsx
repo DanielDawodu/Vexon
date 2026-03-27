@@ -49,6 +49,8 @@ export default function Footer() {
                         <Link href="/dealers">For Dealers</Link>
                         <Link href="/about">About</Link>
                         <Link href="/contact">Contact</Link>
+                        <Link href="/terms">Terms of Service</Link>
+                        <Link href="/privacy">Privacy Policy</Link>
                     </div>
 
                     <div className={styles.column}>
