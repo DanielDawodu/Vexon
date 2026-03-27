@@ -7,12 +7,12 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 export const metadata: Metadata = {
   title: 'Clearline Automotive Concepts | Trusted Car Dealers in Nigeria',
   description:
-    'Looking for trusted car dealers in Nigeria? Clearline Automotive Concepts facilitates verified car deals through deep inspections and clear documentation in Lagos and nationwide.',
-  keywords: 'trusted car dealers in Nigeria, buy verified cars in Lagos, trusted auto dealers in Nigeria, buy cars in Nigeria, genuine car dealers Lagos, Clearline Automotive Concepts, Clearline Auto',
+    'Looking for trusted car dealers in Nigeria? Clearline Automotive Concepts provides sourcing and verification support for car deals through preliminary inspections and documentation checks in Lagos and nationwide.',
+  keywords: 'trusted car dealers in Nigeria, buy cars safely in Lagos, trusted auto dealers in Nigeria, buy cars in Nigeria, genuine car dealers Lagos, Clearline Automotive Concepts, Clearline Auto',
   openGraph: {
     title: 'Clearline Automotive Concepts | Trusted Car Dealers in Nigeria',
     description:
-      'Looking for trusted car dealers in Nigeria? Clearline Automotive Concepts helps car buyers move forward with confidence through verified inspections.',
+      'Looking for trusted car dealers in Nigeria? Clearline Automotive Concepts helps car buyers move forward with confidence through sourcing and verification support.',
     type: 'website',
     url: 'https://clearlineauto.com.ng',
     siteName: 'Clearline Automotive Concepts',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Clearline Automotive Concepts | Trusted Car Dealers in Nigeria',
-    description: 'Buy verified cars from trusted dealers across Nigeria with confidence.',
+    description: 'Buy cars with confidence using our sourcing and verification support across Nigeria.',
   },
   alternates: {
     canonical: 'https://clearlineauto.com.ng',
@@ -32,7 +32,7 @@ const jsonLd = {
   "@type": "AutoDealer",
   "name": "Clearline Automotive Concepts",
   "url": "https://clearlineauto.com.ng",
-  "description": "Trusted car dealers in Nigeria providing verified vehicle inspections and secure deals.",
+  "description": "Trusted car dealers in Nigeria providing vehicle sourcing and verification support.",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "NG",

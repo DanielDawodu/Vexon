@@ -121,9 +121,9 @@ export default function DealersPage() {
                 <div className={styles.grid}>
                     {/* Benefits Column */}
                     <div className={styles.info}>
-                        <h1>Sell faster with verified buyers</h1>
+                        <h1>Connect with supported buyers</h1>
                         <p>
-                            Partner with Clearline Auto and connect with buyers who are ready, screened,
+                            Partner with Clearline Auto and connect with buyers who are ready, supported,
                             and serious about purchasing.
                         </p>
 
@@ -138,6 +138,9 @@ export default function DealersPage() {
                                 </li>
                             ))}
                         </ul>
+                        <p style={{ marginTop: '2rem', fontStyle: 'italic', fontSize: '0.9rem', opacity: 0.8 }}>
+                            Clearline provides sourcing and verification support. Final decision rests with the buyer.
+                        </p>
                     </div>
 
                     {/* Form Column */}

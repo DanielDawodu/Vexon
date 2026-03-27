@@ -6,45 +6,33 @@ import styles from './HowItWorks.module.css';
 export const metadata: Metadata = {
     title: 'How It Works – Clearline Auto',
     description:
-        'Learn how Clearline Auto facilitates verified car deals through a structured process of dealer vetting, vehicle inspection, documentation checks, and secure handover.',
+        'Learn how Clearline Auto provides sourcing and verification support through a structured process of dealer vetting, preliminary inspection, documentation checks, and secure handover.',
 };
 
 const steps = [
     {
         number: 1,
-        title: 'Dealer Vetting',
+        title: 'You tell us your needs',
         description:
-            'We screen and verify dealers before they can list through Clearline Auto, ensuring only credible sellers participate.',
+            'Submit your requirements, budget, and vehicle preferences.',
     },
     {
         number: 2,
-        title: 'Car Inspection & Verification',
+        title: 'We source vehicles',
         description:
-            'Each vehicle undergoes a thorough inspection process to assess its condition, history, and authenticity.',
+            'We connect with our network to find vehicles that match your specific criteria.',
     },
     {
         number: 3,
-        title: 'Documentation Check',
+        title: 'We assist with verification',
         description:
-            'All vehicle documents are verified for accuracy, ownership status, and compliance with regulations.',
+            'We help facilitate preliminary checks on the vehicle\'s condition and documentation based on available information.',
     },
     {
         number: 4,
-        title: 'Buyer Qualification',
+        title: 'You inspect and decide',
         description:
-            'We understand the buyer\'s requirements and budget to match them with verified vehicles that fit their criteria.',
-    },
-    {
-        number: 5,
-        title: 'Viewing & Inspection',
-        description:
-            'Buyers are invited to view and inspect the vehicle in person before making any commitment.',
-    },
-    {
-        number: 6,
-        title: 'Payment & Handover',
-        description:
-            'Once all parties are satisfied, payment is processed and the vehicle is handed over with complete documentation.',
+            'Physical inspection is recommended. You review the vehicle and make the final decision to proceed.',
     },
 ];
 
@@ -85,16 +73,15 @@ export default function HowItWorksPage() {
                 </div>
 
                 <div className={styles.statement}>
-                    <h2>No inspection. No payment.</h2>
+                    <h2>Review Before You Commit</h2>
                     <p>
-                        Every deal through Clearline Auto begins with verification. If a vehicle does
-                        not pass inspection, the transaction does not proceed.
+                        We encourage every buyer to physically inspect the sourced vehicle. Preliminary checks provide a baseline, but the final decision rests with you.
                     </p>
                 </div>
 
                 <div className={styles.cta}>
                     <Link href="/buyers" className="btn btn--primary btn--large">
-                        Start a Verified Request
+                        Request Sourcing Support
                     </Link>
                 </div>
             </div>

@@ -37,8 +37,7 @@ export default function Footer() {
                             Clearline Auto
                         </h3>
                         <p>
-                            Move Forward With Confidence. Verified car deals through
-                            inspections, documentation checks, and transparent processes.
+                            Move Forward With Confidence. Sourcing and verification support based on available information.
                         </p>
                     </div>
 
@@ -68,7 +67,10 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.bottom}>
-                    <p>&copy; {currentYear} Clearline Auto. All rights reserved.</p>
+                    <p style={{ marginBottom: '10px' }}>
+                        Disclaimer: Clearline provides sourcing and verification support. Final decision rests with the buyer.
+                    </p>
+                    <p>&copy; {currentYear} Clearline Automotive Concepts. All rights reserved.</p>
                 </div>
             </div>
         </footer>

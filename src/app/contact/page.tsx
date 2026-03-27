@@ -5,7 +5,7 @@ import styles from './Contact.module.css';
 export const metadata: Metadata = {
     title: 'Contact – Clearline Auto',
     description:
-        'Get in touch with Clearline Auto. Reach out via WhatsApp, email, or phone for verified car deals.',
+        'Get in touch with Clearline Auto. Reach out via WhatsApp, email, or phone for sourcing and verification support.',
 };
 
 export default function ContactPage() {

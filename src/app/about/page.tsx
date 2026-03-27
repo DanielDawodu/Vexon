@@ -41,11 +41,8 @@ export default function AboutPage() {
                         unqualified leads.
                     </p>
                     <p>
-                        Clearline Automotive Concepts was created to bridge this gap in the Nigerian automotive market. By introducing a structured
-                        verification process, we ensure that every deal in Lagos and nationwide is built on a
-                        foundation of trust. We do not own inventory and we do not sell cars
-                        directly. Instead, we facilitate verified transactions between
-                        screened local dealers and qualified buyers looking for trusted vehicles.
+                        Clearline Automotive Concepts was created to bridge this gap in the Nigerian automotive market. We do not own inventory and we do not sell cars
+                        directly. Instead, we act as a sourcing and verification support company, helping you find vehicles and assisting with preliminary checks so you can make an informed decision in Lagos and nationwide.
                     </p>
 
                     <h2>How We Think About Trust</h2>
@@ -60,15 +57,15 @@ export default function AboutPage() {
                         <div className={styles.valueCard}>
                             <h3>Transparency</h3>
                             <p>
-                                Every step of the process is visible and documented. No hidden
-                                fees, no undisclosed issues.
+                                We share all available information with you. No hidden
+                                fees, aiming for clear communication.
                             </p>
                         </div>
                         <div className={styles.valueCard}>
-                            <h3>Verification</h3>
+                            <h3>Support</h3>
                             <p>
-                                Nothing proceeds without proper inspection and documentation
-                                checks.
+                                We provide inspection support and preliminary documentation
+                                checks to assist your purchase.
                             </p>
                         </div>
                         <div className={styles.valueCard}>
@@ -106,8 +103,7 @@ export default function AboutPage() {
                                 Clearline Auto is run by a small team of individuals who have seen the
                                 challenges of car buying firsthand. Our background spans automotive
                                 services, technology, and customer operations. We are committed to
-                                building a better way to buy and sell cars, one verified deal at a
-                                time.
+                                providing sourcing and verification support to make your car buying journey smoother.
                             </p>
                         </div>
                     </div>

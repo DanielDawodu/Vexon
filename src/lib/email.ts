@@ -46,7 +46,7 @@ export async function sendBuyerLeadEmail(data: BuyerLeadData) {
         <p style="color: #9ca3af; margin: 8px 0 0; font-size: 13px;">New Buyer Lead</p>
       </div>
       <div style="background: #ffffff; padding: 28px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 10px 10px;">
-        <h2 style="color: #1a1a2e; font-size: 18px; margin: 0 0 20px;">A new buyer has submitted a verification request</h2>
+        <h2 style="color: #1a1a2e; font-size: 18px; margin: 0 0 20px;">A new buyer has submitted a sourcing support request</h2>
         <table style="width: 100%; border-collapse: collapse;">
           <tr>
             <td style="padding: 10px 0; border-bottom: 1px solid #f0f0f0; color: #6b7280; font-size: 14px; width: 140px;">Full Name</td>
@@ -73,7 +73,7 @@ export async function sendBuyerLeadEmail(data: BuyerLeadData) {
         </table>
         <div style="margin-top: 24px; padding: 16px; background: #f0f7ff; border-radius: 8px; border-left: 3px solid #4a6fa5;">
           <p style="margin: 0; font-size: 13px; color: #4a6fa5;">
-            <strong>Action needed:</strong> Reach out to this buyer via WhatsApp to begin the verification process.
+            <strong>Action needed:</strong> Reach out to this buyer via WhatsApp to begin the sourcing support process.
           </p>
         </div>
       </div>

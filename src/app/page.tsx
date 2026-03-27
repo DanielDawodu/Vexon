@@ -9,17 +9,16 @@ export default function HomePage() {
       <section className={styles.hero}>
         <div className={styles.heroGrid}>
           <div className={styles.heroContent}>
-            <span className={styles.badge}>Trusted Car Dealers in Nigeria</span>
+            <span className={styles.badge}>Vehicle Sourcing & Support</span>
             <h1 className={styles.heroTitle}>
-              Verified Cars. Transparent Deals in Nigeria.
+              Sourcing and Verification Support in Nigeria.
             </h1>
             <p className={styles.heroSubtext}>
-              Clearline Auto connects buyers with the most trusted car dealers in Nigeria. Move forward with confidence through verified
-              inspections and clear documentation. No guesswork. No surprises in Lagos or nationwide.
+              We help you find vehicles and support you with verification before purchase. Move forward with confidence, backed by our preliminary checks.
             </p>
             <div className={styles.heroCtas}>
               <Link href="/buyers" className="btn btn--primary btn--large">
-                Request a Verified Car
+                Request Sourcing Support
               </Link>
               <Link href="/dealers" className="btn btn--secondary btn--large">
                 Partner With Clearline Auto
@@ -45,8 +44,8 @@ export default function HomePage() {
           <div className="section-header">
             <h2>Why Choose Clearline Automotive Concepts</h2>
             <p>
-              As one of the most trusted car verification networks in Nigeria, every deal is built on a foundation of verification, clarity, and
-              professional handling.
+              As a trusted vehicle sourcing network in Nigeria, every deal is supported by preliminary checks, clarity, and
+              professional handling based on available information.
             </p>
           </div>
 
@@ -58,10 +57,10 @@ export default function HomePage() {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
               </div>
-              <h3>Verified Inspections</h3>
+              <h3>Inspection Support</h3>
               <p>
-                Every vehicle goes through a structured inspection process before
-                any deal proceeds.
+                We provide support for physical vehicle inspections to help buyers
+                make informed choices before purchase.
               </p>
             </div>
 
@@ -75,10 +74,9 @@ export default function HomePage() {
                   <polyline points="10 9 9 9 8 9" />
                 </svg>
               </div>
-              <h3>Clear Documentation</h3>
+              <h3>Documentation Checks</h3>
               <p>
-                All paperwork is checked and verified to ensure a clean,
-                transparent transaction.
+                All paperwork undergoes preliminary checks based on supplier-provided information to support a clear transaction.
               </p>
             </div>
 
@@ -162,11 +160,11 @@ export default function HomePage() {
             <div className={styles.ctaOverlay}>
               <h2>Ready to Move Forward?</h2>
               <p>
-                Submit a verified car request or partner with Clearline Auto as a dealer.
+                Submit a sourcing support request or partner with Clearline Auto as a dealer.
               </p>
               <div className={styles.heroCtas}>
                 <Link href="/buyers" className="btn btn--blue btn--large">
-                  Request a Verified Car
+                  Request Sourcing Support
                 </Link>
                 <Link href="/dealers" className="btn btn--secondary btn--large" style={{ borderColor: '#fff', color: '#fff' }}>
                   Become a Partner

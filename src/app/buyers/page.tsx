@@ -66,11 +66,9 @@ export default function BuyersPage() {
                 {/* Header with image */}
                 <div className={styles.headerGrid}>
                     <div className={styles.headerContent}>
-                        <h1>Looking for a verified car?</h1>
+                        <h1>Looking for sourcing support?</h1>
                         <p>
-                            Tell us what you are looking for. Every vehicle recommended through
-                            Clearline Auto goes through inspection and documentation checks before any
-                            viewing or payment takes place.
+                            Tell us what you are looking for. We connect with our network to find vehicles that match and help facilitate preliminary checks based on available information.
                         </p>
                     </div>
                     <div className={styles.headerImage}>
@@ -93,7 +91,7 @@ export default function BuyersPage() {
                 )}
 
                 <div className={styles.formCard}>
-                    <h2>Request Verification</h2>
+                    <h2>Request Sourcing Support</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="fullName" className="form-label">
@@ -189,15 +187,18 @@ export default function BuyersPage() {
                             className={`btn btn--primary btn--large ${styles.submitBtn}`}
                             disabled={status === 'loading'}
                         >
-                            {status === 'loading' ? 'Submitting...' : 'Request Verification'}
+                            {status === 'loading' ? 'Submitting...' : 'Request Sourcing Support'}
                         </button>
                     </form>
                 </div>
 
                 <div className={styles.note}>
                     <p>
-                        Your information is handled with care. We only use it to match you
-                        with verified vehicles that meet your criteria.
+                        Your information is handled with care. We only use it to connect you
+                        with vehicles that meet your criteria.
+                    </p>
+                    <p style={{ marginTop: '1rem', fontStyle: 'italic', fontSize: '0.9rem', opacity: 0.8 }}>
+                        Condition based on supplier-provided information. Physical inspection is recommended.
                     </p>
                 </div>
             </div>
